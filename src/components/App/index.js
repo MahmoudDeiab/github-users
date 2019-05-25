@@ -11,11 +11,6 @@ class App extends PureComponent {
     username: ""
   };
 
-  handleSearchUsers = query => {
-    const { searchUsers, filtersOrder, filtersSort } = this.props;
-    searchUsers({ query, order: filtersOrder, sort: filtersSort });
-  };
-
   handleUsernameChange = username => this.setState({ username });
 
   handleSearch = () => {
